@@ -1,0 +1,13 @@
+/* App Specific */
+body.app {
+  background-color: #1a1a1a; /* Fondo oscuro para la app */
+  font-size: 14px; /* Ajustes de tipografía para app */
+}
+
+header.app {
+  background-color: #000; /* Estilo específico para el header en la app */
+}
+
+form.app {
+  width: 80%; /* Formularios más grandes en la app */
+}

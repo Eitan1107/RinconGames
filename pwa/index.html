@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0077FF">
+    <link rel="stylesheet" href="pwa/styles.css"> <!-- Estilos externos -->
+    <link rel="stylesheet" href="pwa/compartidos.css"> <!-- Estilos comunes -->
+    <link rel="stylesheet" href="pwa/app.css" id="app-stylesheet"> <!-- Para app -->
+    <link rel="stylesheet" href="pwa/web.css" id="web-stylesheet"> <!-- Para web -->
+    <link rel="manifest" href="pwa/manifest.json"> <!-- Referencia al manifest -->
+    <title>Eitan Staroselsky y Yaasiela Silva</title>
+</head>
+<body>
+    <!-- Header y navegación -->
+    <header>
+        <div class="logo">
+            <!-- El isologotipo como imagen dentro de <h1>, implementado semánticamente -->
+            <h1>
+                <!-- Isologotipo del sitio. Tamaño recomendado: 192x192 px o 512x512 px (se usa en el manifest para la PWA) -->
+                <img src="pwa/imagenes/logo.png" alt="RinconGames" width="200" height="auto">
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <main>
+        
+        <section id="inicio">
+            <h1>Bienvenido a RinconGames</h1>
+            <p>El lugar donde los gamers se mantienen al día con las últimas novedades y reseñas de videojuegos.</p>
+
+            <!-- Imagen de portada, ajustada según el tamaño de pantalla -->
+            <!-- Imagen de portada principal. Tamaño recomendado: 1366x500 px para escritorios grandes,
+                 768x300 px para tabletas, 375x150 px para dispositivos móviles. -->
+            <picture>
+                <!-- Si la pantalla es de máximo 768px (móviles y tabletas), usar una imagen más pequeña -->
+                <source media="(max-width: 768px)" srcset="pwa/imagenes/banner-pc.jpg">
+                <!-- Si la pantalla es de máximo 1024px (tabletas y algunos móviles grandes), usar una imagen intermedia -->
+                <source media="(max-width: 1024px)" srcset="pwa/imagenes/banner-pc.jpg">
+                <!-- Imagen para escritorios grandes y dispositivos con pantallas anchas -->
+                <img src="pwa/imagenes/banner-tablet.jpg" alt="Imagen de portada de PixelSpot" width="100%" height="auto">
+            </picture>
+        </section>
+
+        <section id="inicio">
+            <h1> Trayectoria </h1>
+            <p>Esta página fue creada recientemente, con el propósito de poder brindar facilidad a las personas interesadas en los videojuegos, y así puedan tener un espacio para ellos.</p>
+
+            <!-- Imagen de portada, ajustada según el tamaño de pantalla -->
+            <!-- Imagen de portada principal. Tamaño recomendado: 1366x500 px para escritorios grandes,
+                 768x300 px para tabletas, 375x150 px para dispositivos móviles. -->
+            <picture>
+                <!-- Si la pantalla es de máximo 768px (móviles y tabletas), usar una imagen más pequeña -->
+                <source media="(max-width: 768px)" srcset="pwa/imagenes/mando-tablet.jpg">
+                <!-- Si la pantalla es de máximo 1024px (tabletas y algunos móviles grandes), usar una imagen intermedia -->
+                <source media="(max-width: 1024px)" srcset="pwa/imagenes/mando-tablet.jpg">
+                <!-- Imagen para escritorios grandes y dispositivos con pantallas anchas -->
+                <img src="pwa/imagenes/mando-compu.jpg" alt="Imagen de portada de PixelSpot" width="100%" height="auto">
+            </picture>
+        </section>
+
+        <!-- Sección Noticias -->
+        <section id="noticias">
+            <h2>Noticias Destacadas</h2>
+            <article>
+                <h3>Nueva actualización en Free Fire</h3>
+                <p>Conoce los cambios que llegarán con esta actualización...</p>
+                <img src="pwa/imagenes/freefire.jpeg" alt="freefire" width="350" height="auto">
+            </article>
+            <article>
+                <h3>Evento especial en E3</h3>
+                <p>Prepárate para este evento único lleno de sorpresas...</p>
+                <img src="pwa/imagenes/e3.jpeg" alt="e3" width="350" height="auto">
+            </article>
+            <article>
+                <h3>Descuentos sorpresa</h3>
+                <p>Encuentra los mejores descuentos para nuestra familia RinconGames...</p>
+                <img src="pwa/imagenes/sorpresa.jpeg" alt="sorpresa" width="350" height="auto">
+            </article>
+            <h2>Descripción</h2>
+                <p>RinconGames es un portal dedicado a la apasionante y dinámica industria de los videojuegos, creado para ofrecer a los gamers más entusiastas y curiosos un espacio donde explorar las últimas noticias, reseñas detalladas y contenido exclusivo sobre sus juegos favoritos. En RinconGames, los jugadores pueden mantenerse al día con las actualizaciones de los títulos más populares, descubrir nuevos lanzamientos y sumergirse en reseñas críticas que cubren tanto los aspectos más técnicos como los más divertidos de cada juego.</p>
+                <img src="pwa/imagenes/videojuegos 2.jpeg" alt="Descripción" width="350" height="auto">
+        </section>
+
+        <!-- Sección Reseñas -->
+        <section id="reseñas">
+            <h2>Reseñas de Juegos</h2>
+            <div class="review">
+                <!-- Imagen del juego 1. Tamaño recomendado: 600x400 px para pantalla grande, o 300x200 px para miniaturas -->
+                <img src="pwa/imagenes/juego-1.jpg" alt="Juego 1" width="150" height="auto">
+                <h3>Like a Dragon: Infinite Wealth</h3>
+                <p>Este juego de rol ofrece una emocionante combinación de narrativa profunda, actividades secundarias extravagantes y un interesante combate por turnos. Sigue al protagonista Ichiban Kasuga mientras se enfrenta a desafíos personales y sociales. Con escenarios vibrantes, personajes coloridos y humor, amplía la serie Yakuza al tiempo que mantiene su estilo distintivo y lúdico.</p>
+                <p>Calificación: ⭐⭐⭐⭐☆</p>
+            </div>
+            <div class="review">
+                <!-- Imagen del juego 2. Tamaño recomendado: 600x400 px para pantalla grande, o 300x200 px para miniaturas -->
+                <img src="pwa/imagenes/juego-2.jpg" alt="Juego 2" width="150" height="auto">
+                <h3>Alan Wake II</h3>
+                <p>Un juego de terror psicológico que sigue al escritor Alan Wake mientras se adentra en un mundo retorcido y misterioso. La historia está llena de intriga, escenarios oscuros y un suspenso inquietante, y combina mecánicas de supervivencia con un juego de investigación. El juego ha sido elogiado por su narrativa envolvente y su tensión atmosférica, lo que lo convierte en un juego imprescindible para los fanáticos del género.</p>
+                <p>Calificación: ⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="review">
+                <!-- Imagen del juego 2. Tamaño recomendado: 600x400 px para pantalla grande, o 300x200 px para miniaturas -->
+                <img src="pwa/imagenes/fornite.jpeg" alt="Juego 3" width="150" height="auto">
+                <h3>Fortnite</h3>
+                <p>Fortnite es un popular videojuego en línea de batalla real desarrollado por Epic Games. En él, hasta 100 jugadores compiten en una isla para ser el último en pie. Los jugadores deben recolectar recursos, construir estructuras y eliminar a otros mientras enfrentan desafíos de supervivencia. El juego se destaca por su estilo gráfico colorido, su jugabilidad dinámica que incluye la construcción, y sus constantes actualizaciones con nuevos eventos y contenido. Además, Fortnite tiene un modo creativo y un modo "Salvar el mundo", que es una experiencia cooperativa PvE. El juego es gratuito, pero ofrece compras dentro de la aplicación para cosméticos y pases de temporada.</p>
+                <p>Calificación: ⭐⭐⭐⭐⭐</p>
+            </div>
+        </section>
+
+        <!-- Sección Galería -->
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <!-- Imágenes de la galería. Tamaño recomendado: 600x400 px para contenido principal, o 300x200 px para miniaturas -->
+                <img src="pwa/imagenes/galeria-1.jpg" alt="Galería 1" width="200" height="auto">
+                <img src="pwa/imagenes/galeria-2.jpg" alt="Galería 2" width="200" height="auto">
+                <img src="pwa/imagenes/galeria-3.jpg" alt="Galería 3" width="200" height="auto">
+                <img src="pwa/imagenes/galeria-4.jpg" alt="Galería 4" width="200" height="auto">
+                <img src="pwa/imagenes/galeria-5.jpg" alt="Galería 5" width="200" height="auto">
+                
+            </div>
+        </section>
+
+        <!-- Sección Sobre Nosotros -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>En RinconGames, nos apasiona todo lo relacionado con los videojuegos. Nuestro objetivo es ofrecerte un espacio donde puedas encontrar las últimas noticias, reseñas y contenido exclusivo sobre tus juegos favoritos. Ya sea que seas un gamer experimentado o estés comenzando tu aventura, tenemos algo para ti. Únete a nuestra comunidad y mantente actualizado con todo lo que sucede en el mundo de los videojuegos. ¡Porque en RinconGames, los videojuegos son más que una pasión, son un estilo de vida!</p>
+        </section>
+
+        <!-- Sección Contacto -->
+        <div class="contactocontainer">
+            <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre completo" minlength="3">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+            
+                <label for="topic">Asunto:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Selecciona un asunto</option>
+                    <option value="feedback">Comentarios</option>
+                    <option value="support">Soporte técnico</option>
+                    <option value="inquiries">Consultas generales</option>
+                </select>
+            
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..." minlength="10"></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>  
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Carrera: Diseño Multimedial</p>
+        <p>Materia: Maquetado y Desarrollo Web</p>
+        <p>Curso: DMT2BV</p>
+        <p>Año: 2024</p>
+        <p>Turno: Tarde</p>
+        <p>Eitan Staroselsky y Yaasiela Silva</p>
+        <img src="pwa/imagenes/foto-perfil.jpg" alt="Foto de Eitan" width="100" height="auto">
+        <img src="pwa/imagenes/foto-perfil2.jpg" alt="Foto de Yaasi" width="100" height="auto">
+    </footer>
+
+    
+
+    <!-- Vinculamos el script JS -->
+    <script src="pwa/script.js"></script>
+</body>
+</html>
